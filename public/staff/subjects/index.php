@@ -2,10 +2,10 @@
 
 <?php
 
-$subject_set = find_all_subjects();
+  require_login();
 
+  $subject_set = find_all_subjects();
 
-  
 ?>
 
 <?php $page_title = 'Subjects'; ?>
@@ -38,13 +38,14 @@ $subject_set = find_all_subjects();
     	    <td><?php echo h($subject['menu_name']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/subjects/show.php?id=' . h(u($subject['id']))); ?>">View</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/subjects/edit.php?id=' . h(u($subject['id']))); ?>">Edit</a></td>
-          <td><a class="action" href="<?php echo url_for('/staff/subjects/delete.php?id=' . h(u($subject['id'])));?> ">Delete</a></td>
+          <td><a class="action" href="<?php echo url_for('/staff/subjects/delete.php?id=' . h(u($subject['id']))); ?>">Delete</a></td>
     	  </tr>
       <?php } ?>
   	</table>
-<?php
-mysqli_free_result($subject_set);
-?>
+
+    <?php
+      mysqli_free_result($subject_set);
+    ?>
   </div>
 
 </div>
