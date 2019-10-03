@@ -72,7 +72,7 @@ navigation a {
 
 navigation a:hover {
   color: #e03e52;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a {
@@ -81,7 +81,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline
+  /* text-decoration: underline */
 }
 
 ul.subjects {

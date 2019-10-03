@@ -1,1 +1,4 @@
-private/db_credentials
+# db connection files
+db_credentials
+
+#
