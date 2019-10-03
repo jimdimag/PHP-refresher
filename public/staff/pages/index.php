@@ -36,7 +36,7 @@
           <td><?php echo h($subject['menu_name']); ?></td>
           <td><?php echo h($page['position']); ?></td>
           <td><?php echo $page['visible'] == 1 ? 'true' : 'false'; ?></td>
-    	    <td><?php echo h($page['menu_name']); ?></td>
+          <td><?php echo h($page['menu_name']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . h(u($page['id']))); ?>">View</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/pages/edit.php?id=' . h(u($page['id']))); ?>">Edit</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/pages/delete.php?id=' . h(u($page['id']))); ?>">Delete</a></td>
